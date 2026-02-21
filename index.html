@@ -3,339 +3,1228 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>pereezd Kaliningrad — Грузоперевозки</title>
-  <meta name="description" content="⭐⭐⭐⭐⭐Читaйте oтзывы Грузoпepевозки, квартирныe пеpеезды,пoмoщь грузчикoв ,работaeм пo Kaлининграду и облaсти Гpузoвoе такси Звоните по любым вопроcoм c 8.30 дo 21.00 Пpокoнcультирую беcплaтнo ПEРEXОДИТЕ В ПPOФИЛЬ Hам мoжно дoвeрять 👍 Poхля,.">
-    <style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap');
-:root {
-  --bg:#f8fafc;--surface:#ffffff;--text:#122033;--muted:#52657a;
-  --primary:#1e3a5f;--accent:#c8a45c;--dark:#0f172a;
-  --font-body:'DM Sans',system-ui,sans-serif;
-  --font-title:'DM Serif Display','DM Sans',system-ui,sans-serif;
-  --radius:16px;--shadow:0 20px 60px rgba(2,6,23,.12);
+  <title>pereezd Kaliningrad — Грузоперевозки в Калининград</title>
+  <meta name="description" content="Профессиональные грузоперевозки от pereezd Kaliningrad в Калининград. Работаем 24/7.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+    :root{
+      --yellow:#ffd000;--yellow-dark:#e6ba00;--black:#111;--dark:#1a1a1a;
+      --gray:#f4f4f4;--text:#222;--text-light:#666;--white:#fff;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Montserrat',sans-serif;color:var(--text);line-height:1.6;background:var(--white);}
+    a{text-decoration:none;color:inherit;}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px;}
+
+    /* TOPNAV */
+    .topnav{background:var(--black);padding:12px 0;}
+    .topnav__inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+    .logo{display:flex;align-items:center;gap:10px;}
+    .logo__icon{width:46px;height:36px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;}
+    .logo__icon span{display:block;height:3px;background:var(--yellow);border-radius:2px;}
+    .logo__icon span:nth-child(1){width:30px;}
+    .logo__icon span:nth-child(2){width:22px;}
+    .logo__icon span:nth-child(3){width:16px;}
+    .logo__text{color:#fff;font-size:18px;font-weight:900;letter-spacing:1px;line-height:1.1;}
+    .logo__sub{color:var(--yellow);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
+    .topnav__links{display:flex;gap:20px;}
+    .topnav__links a{color:rgba(255,255,255,.7);font-size:12px;font-weight:600;letter-spacing:.5px;transition:.2s;}
+    .topnav__links a:hover{color:var(--yellow);}
+    .topnav__phone{color:#fff;font-size:15px;font-weight:700;}
+    .topnav__cta{background:var(--yellow);color:var(--black);border:none;padding:9px 20px;border-radius:5px;font-size:12px;font-weight:800;cursor:pointer;letter-spacing:.5px;}
+
+    /* HERO BAND */
+    .hero-band{background:var(--yellow);padding:14px 0;text-align:center;}
+    .hero-band h1{font-size:clamp(26px,5vw,60px);font-weight:900;color:var(--black);letter-spacing:6px;text-transform:uppercase;}
+
+    /* HERO */
+    .hero{background:url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1600&q=80') center/cover no-repeat;position:relative;min-height:460px;display:flex;align-items:center;}
+    .hero::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.72);}
+    .hero__inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 340px;gap:32px;align-items:center;padding:50px 0;}
+    @media(max-width:800px){.hero__inner{grid-template-columns:1fr;}}
+    .hero__title{font-size:clamp(26px,4vw,50px);font-weight:900;color:#fff;text-transform:uppercase;line-height:1.15;margin-bottom:14px;}
+    .hero__checks{display:flex;flex-direction:column;gap:8px;}
+    .hero__check{color:rgba(255,255,255,.85);font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px;}
+    .hero__check::before{content:'•';color:var(--yellow);font-size:18px;line-height:1;}
+    .hero__btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+    .btn-yellow{background:var(--yellow);color:var(--black);border:none;padding:12px 24px;border-radius:6px;font-size:13px;font-weight:800;cursor:pointer;letter-spacing:.5px;}
+    .btn-green{background:#25d366;color:#fff;border:none;padding:12px 24px;border-radius:6px;font-size:13px;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:6px;}
+    .hero__person{position:relative;display:flex;justify-content:center;}
+    .hero__person img{width:260px;object-fit:cover;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.4);}
+
+    /* SERVICES GRID */
+    .section{padding:60px 0;}
+    .section--gray{background:var(--gray);}
+    .section__title{font-size:26px;font-weight:900;text-align:center;text-transform:uppercase;margin-bottom:8px;}
+    .section__sub{text-align:center;color:var(--text-light);font-size:13px;margin-bottom:36px;}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+    @media(max-width:700px){.services-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:460px){.services-grid{grid-template-columns:1fr;}}
+    .svc-card{border-radius:8px;overflow:hidden;border:1px solid #e5e5e5;background:var(--white);transition:box-shadow .2s;}
+    .svc-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.1);}
+    .svc-card--cta{background:var(--yellow);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;cursor:pointer;}
+    .svc-card--cta p{font-size:13px;font-weight:800;color:var(--black);line-height:1.4;margin-bottom:12px;}
+    .svc-card--cta .phone{font-size:16px;font-weight:900;color:var(--black);}
+    .svc-card__img{width:100%;height:140px;object-fit:cover;display:block;}
+    .svc-card__body{padding:14px;}
+    .svc-card__title{font-size:13px;font-weight:800;text-transform:uppercase;margin-bottom:6px;}
+    .svc-card__price{font-size:12px;color:var(--text-light);margin-bottom:10px;}
+    .svc-card__btn{display:inline-block;background:var(--yellow);color:var(--black);padding:7px 16px;border-radius:4px;font-size:11px;font-weight:800;text-transform:uppercase;}
+
+    /* WHY US */
+    .why-grid{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:stretch;}
+    @media(max-width:700px){.why-grid{grid-template-columns:1fr;}}
+    .why-banner{background:var(--yellow);border-radius:10px;padding:24px 20px;display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;}
+    .why-banner__label{font-size:11px;font-weight:700;color:var(--black);letter-spacing:2px;text-transform:uppercase;}
+    .why-banner__logo{font-size:28px;font-weight:900;color:var(--black);}
+    .why-banner img{width:100%;border-radius:8px;object-fit:cover;height:180px;}
+    .why-features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+    @media(max-width:700px){.why-features{grid-template-columns:1fr 1fr;}}
+    .why-feat{background:var(--white);border:1px solid #e5e5e5;border-radius:8px;padding:16px;display:flex;gap:12px;align-items:flex-start;}
+    .why-feat__icon{font-size:24px;flex-shrink:0;}
+    .why-feat h4{font-size:12px;font-weight:800;text-transform:uppercase;margin-bottom:4px;}
+    .why-feat p{font-size:11px;color:var(--text-light);}
+
+    /* PRICE TABLE */
+    .price-table{width:100%;border-collapse:collapse;font-size:14px;}
+    .price-table th{background:var(--black);color:#fff;padding:12px 16px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase;}
+    .price-table td{padding:12px 16px;border-bottom:1px solid #eee;vertical-align:middle;}
+    .price-table tr:last-child td{border-bottom:none;}
+    .price-table tr:hover td{background:#fffbe6;}
+    .price-table .price-val{font-weight:700;color:var(--black);}
+    .price-table .btn-call{background:var(--yellow);border:none;width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;}
+
+    /* ABOUT */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;}
+    @media(max-width:700px){.about-grid{grid-template-columns:1fr;}}
+    .about-grid img{width:100%;border-radius:10px;object-fit:cover;height:280px;}
+    .about__badge{display:inline-block;background:var(--black);color:var(--yellow);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:4px;margin-bottom:14px;}
+    .about__title{font-size:20px;font-weight:900;margin-bottom:12px;}
+    .about__text{font-size:13px;color:var(--text-light);line-height:1.8;margin-bottom:10px;}
+    .about__btn{display:inline-block;background:var(--yellow);color:var(--black);padding:11px 24px;border-radius:6px;font-size:13px;font-weight:800;margin-top:6px;}
+
+    /* PARTNERS */
+    .partners-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:8px;}
+    @media(max-width:700px){.partners-grid{grid-template-columns:repeat(3,1fr);}}
+    .partner-chip{background:var(--white);border:1px solid #e0e0e0;border-radius:6px;padding:14px 10px;text-align:center;font-size:13px;font-weight:800;color:var(--text-light);}
+    .partner-note{background:#f5f5f5;border-radius:8px;padding:14px 20px;font-size:12px;color:var(--text-light);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:12px;}
+
+    /* SOCIAL */
+    .social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px;}
+    @media(max-width:560px){.social-grid{grid-template-columns:1fr;}}
+    .soc-card{border-radius:10px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 20px;text-align:center;cursor:pointer;transition:transform .2s;}
+    .soc-card:hover{transform:translateY(-4px);}
+    .soc-card--yt{background:#ff0000;}
+    .soc-card--ig{background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4);}
+    .soc-card--tk{background:#010101;}
+    .soc-card__icon{font-size:36px;margin-bottom:10px;}
+    .soc-card__name{font-size:18px;font-weight:900;color:#fff;margin-bottom:4px;}
+    .soc-card__desc{font-size:12px;color:rgba(255,255,255,.7);margin-bottom:14px;}
+    .soc-card__btn{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);color:#fff;padding:8px 20px;border-radius:20px;font-size:12px;font-weight:700;}
+
+    /* CTA BOTTOM */
+    .cta-bottom{background:var(--black);padding:60px 0;}
+    .cta-bottom__inner{display:grid;grid-template-columns:1fr 300px;gap:36px;align-items:center;}
+    @media(max-width:700px){.cta-bottom__inner{grid-template-columns:1fr;}}
+    .cta-bottom h2{font-size:clamp(20px,3vw,32px);font-weight:900;color:#fff;text-transform:uppercase;line-height:1.3;margin-bottom:12px;}
+    .cta-bottom h2 span{color:var(--yellow);}
+    .cta-bottom p{font-size:13px;color:rgba(255,255,255,.7);}
+    .cta-bottom__contacts{display:flex;flex-direction:column;gap:12px;}
+    .cta-bottom__phone{font-size:20px;font-weight:900;color:var(--yellow);}
+    .cta-bottom__btn{background:var(--yellow);color:var(--black);border:none;padding:13px 28px;border-radius:7px;font-size:14px;font-weight:800;cursor:pointer;letter-spacing:.5px;}
+    .cta-bottom__green{background:#25d366;color:#fff;border:none;padding:13px 28px;border-radius:7px;font-size:14px;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:7px;justify-content:center;}
+
+    /* FOOTER */
+    .footer{background:#0d0d0d;color:rgba(255,255,255,.5);padding:44px 0 16px;}
+    .footer__inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;}
+    @media(max-width:700px){.footer__inner{grid-template-columns:1fr 1fr;}}
+    .footer__logo{font-size:20px;font-weight:900;color:#fff;margin-bottom:8px;}
+    .footer__logo span{color:var(--yellow);}
+    .footer__desc{font-size:12px;line-height:1.7;margin-bottom:10px;}
+    .footer__soc{display:flex;gap:10px;margin-top:8px;}
+    .footer__soc a{width:32px;height:32px;background:rgba(255,255,255,.07);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;transition:.2s;}
+    .footer__soc a:hover{background:var(--yellow);color:var(--black);}
+    .footer h4{font-size:12px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;}
+    .footer ul{list-style:none;font-size:12px;}
+    .footer ul li{margin-bottom:7px;}
+    .footer ul li a{color:rgba(255,255,255,.5);transition:.2s;}
+    .footer ul li a:hover{color:var(--yellow);}
+    .footer__bottom{border-top:1px solid rgba(255,255,255,.06);margin-top:28px;padding-top:14px;text-align:center;font-size:11px;}
+    @media(max-width:900px){.topnav__links{display:none;}}
+  </style>
+<style>
+
+/* ===== CARGO BRAND STRIP ===== */
+.cargo-brand-strip {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #111 0%, #1a1a1a 50%, #111 100%);
+  overflow: hidden;
+  line-height: 1;
+  padding: 0;
+  position: relative;
+  z-index: 99;
+  border-bottom: 3px solid rgba(255,200,0,0.7);
 }
-* { box-sizing:border-box; }
-html,body { margin:0; padding:0; background:var(--bg); color:var(--text); }
-body { font-family:var(--font-body); line-height:1.6; }
-h1,h2,h3,h4 { font-family:var(--font-title); line-height:1.15; margin:0 0 14px; }
-h1 { font-size:clamp(34px,5vw,62px); letter-spacing:-.02em; }
-h2 { font-size:clamp(28px,4vw,44px); letter-spacing:-.015em; margin-bottom:24px; }
-p { margin:0 0 12px; color:var(--muted); }
-.container { width:min(1200px,92%); margin:0 auto; }
-.section { padding:88px 0; }
-.section--muted { background:color-mix(in oklab, var(--surface) 76%, var(--primary) 8%); }
-.section--dark { background:var(--dark); }
-.section--dark h2,.section--dark p { color:#e2e8f0; }
+.cargo-brand-strip__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  width: 100%;
+}
+.cargo-brand-strip__text {
+  font-family: 'Montserrat', 'Impact', 'Arial Black', sans-serif;
+  font-size: clamp(36px, 5.5vw, 90px);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  line-height: 0.9;
+  background: linear-gradient(90deg, #ffd000 0%, #fff8e0 40%, #ffd000 60%, #ffaa00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  animation: gruz-shimmer 3s ease-in-out infinite;
+  background-size: 200% 100%;
+}
+@keyframes gruz-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
 
-.header { position:sticky; top:0; z-index:50; backdrop-filter:blur(8px); border-bottom:1px solid color-mix(in oklab, var(--primary) 15%, transparent); }
-.header--classic,.header--split,.header--centered,.header--transparent { background:color-mix(in oklab, var(--surface) 90%, transparent); }
-.header--transparent { position:absolute; width:100%; background:transparent; border-bottom:none; }
-.header--transparent .logo,
-.header--transparent nav a,
-.header--transparent .btn--ghost { color:#ffffff; border-color:rgba(255,255,255,.45); }
-.navrow { min-height:74px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
-.logo { font-weight:800; letter-spacing:.2px; font-size:20px; }
-.logo-kicker { font-size:11px; letter-spacing:.14em; text-transform:uppercase; font-weight:800; color:var(--primary); white-space:nowrap; }
-.centerkicker { text-align:center; font-size:11px; letter-spacing:.16em; text-transform:uppercase; font-weight:800; color:var(--primary); padding-top:4px; }
-nav { display:flex; gap:24px; flex-wrap:wrap; }
-nav a { text-decoration:none; color:var(--text); font-weight:600; }
-.topbar { background:var(--dark); color:#fff; }
-.topbar__row { min-height:38px; display:flex; justify-content:space-between; align-items:center; font-size:14px; }
-.topbar a { color:#fff; text-decoration:none; font-weight:700; }
-.centerlogo { text-align:center; padding-top:14px; font-size:24px; font-weight:800; }
-.navcenter { padding:10px 0 16px; display:flex; justify-content:center; }
+/* ===== HERO TRUCK OVERLAY ===== */
+.cargo-hero-truck-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5) saturate(1.2);
+  transition: transform 8s ease-out;
+}
+.cargo-hero-truck-overlay.parallax-active {
+  transform: scale(1.06);
+}
+.hero, .hero-band+.hero, section.hero {
+  position: relative;
+  overflow: hidden;
+}
 
-.btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:none; border-radius:999px; padding:13px 24px; cursor:pointer; font-weight:700; text-decoration:none; background:linear-gradient(135deg,var(--primary),var(--accent)); color:#fff; box-shadow:var(--shadow); }
-.btn--sm { padding:10px 16px; font-size:14px; }
-.btn--ghost { background:transparent; color:var(--text); border:1.5px solid color-mix(in oklab, var(--primary) 30%, var(--text) 20%); box-shadow:none; }
+/* ===== SCROLL-REVEAL ANIMATIONS ===== */
+[data-animate], [data-reveal] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-animate].animated, [data-reveal].animated {
+  opacity: 1;
+  transform: none;
+}
+[data-animate-left] {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-animate-left].animated { opacity: 1; transform: none; }
+[data-animate-right] {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-animate-right].animated { opacity: 1; transform: none; }
+[data-animate-scale] {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-animate-scale].animated { opacity: 1; transform: scale(1); }
 
-.hero { position:relative; overflow:hidden; }
-.hero .eyebrow { margin:0 0 10px; text-transform:uppercase; letter-spacing:.18em; font-size:12px; color:var(--accent); font-weight:800; }
-.hero__actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
-.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:stretch; }
-.hero--media-left { padding:110px 0 80px; }
-.hero--media-left .media { border-radius:22px; min-height:500px; background-size:cover; background-position:center; box-shadow:var(--shadow); }
-.hero--media-left .content { background:var(--surface); border-radius:22px; padding:42px; box-shadow:var(--shadow); }
+/* Staggered children */
+[data-animate]:nth-child(2) { transition-delay: 0.1s; }
+[data-animate]:nth-child(3) { transition-delay: 0.2s; }
+[data-animate]:nth-child(4) { transition-delay: 0.3s; }
+[data-animate]:nth-child(5) { transition-delay: 0.4s; }
 
-.hero--full { min-height:94vh; display:grid; place-items:center; background-image:linear-gradient(130deg, rgba(2,6,23,.65), rgba(2,6,23,.45)), var(--hero); background-size:cover; background-position:center; }
-.hero__content--center { text-align:center; max-width:880px; color:#fff; }
-.hero__content--center p { color:#e5e7eb; }
+/* ===== FLOATING TRUCK SVG ===== */
+.truck-float-svg {
+  position: absolute;
+  right: -220px;
+  bottom: 0;
+  width: min(500px, 55vw);
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 1s 0.4s ease, transform 1.2s 0.4s ease;
+  z-index: 2;
+  pointer-events: none;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+}
+.truck-float-svg.animated {
+  opacity: 0.92;
+  transform: translateX(0);
+  right: -40px;
+}
 
-.hero--diag { min-height:90vh; display:grid; grid-template-columns:58% 42%; }
-.hero__diag-left { background:var(--dark); color:#fff; clip-path:polygon(0 0, 100% 0, 84% 100%, 0 100%); display:grid; align-items:center; }
-.hero__diag-left .inner { width:min(620px,88%); margin-left:auto; margin-right:8%; }
-.hero__diag-left p { color:#cbd5e1; }
-.hero__diag-right { background-size:cover; background-position:center; }
+/* ===== PULSE BUTTON ===== */
+.btn-pulse {
+  animation: btn-pulse-anim 2s ease-in-out infinite;
+}
+@keyframes btn-pulse-anim {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,208,0,0.5); }
+  50% { box-shadow: 0 0 0 16px rgba(255,208,0,0); }
+}
 
-.hero--glass { min-height:88vh; padding:90px 0; background-image:linear-gradient(120deg, rgba(2,6,23,.45), rgba(2,6,23,.5)), var(--hero); background-size:cover; background-position:center; }
-.glass { max-width:760px; background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.34); border-radius:24px; padding:38px; backdrop-filter:blur(14px); color:#fff; }
-.glass p { color:#eff6ff; }
-.stats { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:22px 0; }
-.stats div { background:rgba(15,23,42,.35); border-radius:14px; padding:14px; }
-.stats strong { display:block; font-size:24px; }
+/* ===== COUNTER ANIMATION ===== */
+.cargo-stat-num {
+  display: inline-block;
+  transition: color 0.3s;
+}
 
-.hero--minimal { min-height:86vh; background-image:var(--hero); background-size:cover; background-position:center; display:grid; align-items:end; }
-.hero--minimal .overlay { position:absolute; inset:0; background:linear-gradient(180deg, rgba(2,6,23,.35), rgba(2,6,23,.82)); }
-.hero--minimal .hero__content { position:relative; z-index:1; color:#fff; padding-bottom:92px; max-width:760px; }
-.hero--minimal p { color:#dbeafe; }
+/* ===== PARTICLES ===== */
+.cargo-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.cargo-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255,208,0,0.6);
+  animation: particle-rise linear infinite;
+}
+@keyframes particle-rise {
+  0% { opacity: 0; transform: translateY(0) scale(1); }
+  20% { opacity: 1; }
+  80% { opacity: 0.5; }
+  100% { opacity: 0; transform: translateY(-120vh) scale(0.3); }
+}
 
-.hero--stats { padding:100px 0 80px; }
-.hero--stats .panel { border-radius:24px; min-height:520px; background-size:cover; background-position:center; position:relative; overflow:hidden; }
-.hero--stats .panel::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(2,6,23,.2), rgba(2,6,23,.72)); }
-.statgrid { position:absolute; inset:auto 18px 18px; z-index:2; display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
-.statgrid div { background:rgba(255,255,255,.88); border-radius:12px; padding:12px; }
-.statgrid strong { display:block; font-size:22px; color:var(--dark); }
-
-.cards { display:grid; gap:18px; }
-.cards--4 { grid-template-columns:repeat(4,1fr); }
-.cards--3 { grid-template-columns:repeat(3,1fr); }
-.cards article,.service-list article,.rows article,.prices article { background:var(--surface); border-radius:18px; padding:24px; box-shadow:var(--shadow); }
-
-.service-list { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
-.rows { display:grid; gap:14px; }
-
-.prices { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-.prices--six { grid-template-columns:repeat(3,1fr); }
-.prices .featured { border:2px solid var(--primary); transform:translateY(-6px); }
-.price { font-size:34px; font-weight:800; color:var(--primary); margin:8px 0 10px; }
-.prices ul { margin:0; padding-left:18px; color:var(--muted); }
-
-.works-story .story-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
-.works-story img,.masonry img,.strip img { width:100%; height:100%; border-radius:14px; object-fit:cover; display:block; }
-.masonry { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
-.masonry img:nth-child(2), .masonry img:nth-child(5) { grid-row:span 2; min-height:420px; }
-.masonry img { min-height:200px; }
-.strip { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; }
-.strip img { min-height:220px; }
-
-.timeline { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
-.timeline article { background:var(--surface); border-radius:14px; padding:18px; box-shadow:var(--shadow); }
-.timeline span { display:inline-flex; width:34px; height:34px; border-radius:999px; align-items:center; justify-content:center; background:var(--primary); color:#fff; font-weight:700; font-size:13px; margin-bottom:8px; }
-
-.lead { padding:86px 0; }
-.card-form,.panel-floating { max-width:760px; margin:0 auto; background:var(--surface); border-radius:22px; padding:30px; box-shadow:var(--shadow); }
-.lead--split { display:grid; grid-template-columns:44% 56%; }
-.lead__info { background:var(--dark); color:#fff; padding:44px; display:grid; gap:14px; align-content:center; }
-.lead__info p,.lead__info a { color:#e2e8f0; }
-.lead__form { background:color-mix(in oklab, var(--dark) 82%, #fff 18%); padding:32px; display:grid; align-items:center; }
-form { display:grid; gap:12px; }
-input,textarea { width:100%; border-radius:12px; border:1.5px solid color-mix(in oklab, var(--primary) 18%, #cbd5e1); padding:13px 14px; background:#fff; color:#0f172a; font:inherit; }
-.lead--split input,.lead--split textarea { background:#fff; }
-.fgrid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-
-.footer { background:var(--dark); color:#cbd5e1; padding:22px 0; }
-.footer__row { display:flex; justify-content:space-between; gap:12px; align-items:center; }
-
-.sticky-call,.sticky-tg { position:fixed; right:20px; width:56px; height:56px; border-radius:999px; display:grid; place-items:center; text-decoration:none; color:#fff; font-size:24px; box-shadow:0 12px 24px rgba(2,6,23,.25); z-index:60; }
-.sticky-call { bottom:92px; background:linear-gradient(135deg,#22c55e,#16a34a); }
-.sticky-tg { bottom:24px; background:linear-gradient(135deg,#0ea5e9,#2563eb); }
-
-.mobile-cta {
-  position: fixed;
+/* ===== ROAD LINE ANIMATION ===== */
+.cargo-road {
+  position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  z-index: 80;
-  display: none;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  padding: 8px;
-  background: color-mix(in oklab, var(--dark) 84%, #000 16%);
-  box-shadow: 0 -8px 28px rgba(2,6,23,.35);
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,208,0,0.8) 0px, rgba(255,208,0,0.8) 40px,
+    transparent 40px, transparent 80px
+  );
+  background-size: 80px 6px;
+  animation: road-move 1.2s linear infinite;
+  z-index: 3;
 }
-.mobile-cta a {
-  text-align: center;
-  text-decoration: none;
-  font-weight: 800;
+@keyframes road-move {
+  from { background-position: 0 0; }
+  to { background-position: -80px 0; }
+}
+
+/* ===== TELEGRAM FORM ===== */
+.cargo-tg-form-section {
+  padding: 70px 0;
+  background: linear-gradient(135deg, #111 0%, #1c1c1c 100%);
+  position: relative;
+  overflow: hidden;
+}
+.cargo-tg-form-section::before {
+  content: '🚚';
+  position: absolute;
+  font-size: 200px;
+  opacity: 0.04;
+  right: -20px;
+  bottom: -30px;
+  pointer-events: none;
+}
+.cargo-tg-form {
+  max-width: 640px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,208,0,0.2);
   border-radius: 12px;
-  padding: 12px 10px;
+  padding: 40px;
+  backdrop-filter: blur(8px);
+}
+.cargo-tg-form__title {
+  font-family: 'Montserrat', 'Impact', 'Arial Black', sans-serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #ffd000;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.cargo-tg-form__sub {
   font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  margin-bottom: 28px;
 }
-.mobile-cta__call {
+.cargo-tg-form input,
+.cargo-tg-form select,
+.cargo-tg-form textarea {
+  display: block;
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,208,0,0.25);
   color: #fff;
-  background: linear-gradient(135deg,#22c55e,#16a34a);
+  padding: 13px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  border-radius: 6px;
+  outline: none;
+  margin-bottom: 12px;
+  transition: border-color 0.3s, background 0.3s;
 }
-.mobile-cta__lead {
-  color: #fff;
-  background: linear-gradient(135deg,var(--primary),var(--accent));
+.cargo-tg-form input:focus,
+.cargo-tg-form textarea:focus {
+  border-color: #ffd000;
+  background: rgba(255,208,0,0.07);
+}
+.cargo-tg-form input::placeholder,
+.cargo-tg-form textarea::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+.cargo-tg-form textarea { height: 90px; resize: vertical; }
+.cargo-tg-form__btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #ffd000, #ffaa00);
+  color: #111;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: btn-pulse-anim 2s ease-in-out infinite;
+  margin-top: 6px;
+  font-family: 'Montserrat', 'Impact', 'Arial Black', sans-serif;
+}
+.cargo-tg-form__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255,208,0,0.4);
+}
+.cargo-tg-form__success {
+  display: none;
+  text-align: center;
+  padding: 30px;
+  color: #4caf50;
+  font-size: 22px;
+  font-weight: 700;
 }
 
-@media (max-width:1024px) {
-  .cards--4,.cards--3,.prices,.timeline,.strip { grid-template-columns:repeat(2,1fr); }
-  .grid2,.hero--diag,.lead--split,.service-list { grid-template-columns:1fr; }
-  .hero__diag-left { clip-path:none; }
-  .masonry { grid-template-columns:repeat(2,1fr); }
-}
-@media (max-width:700px) {
-  nav { display:none; }
-  .cards--4,.cards--3,.prices,.timeline,.strip,.masonry,.service-list { grid-template-columns:1fr; }
-  .topbar__row,.footer__row { flex-direction:column; align-items:flex-start; }
-  .stats { grid-template-columns:1fr; }
-  .fgrid { grid-template-columns:1fr; }
-  .hero--media-left .content,.glass,.card-form,.panel-floating { padding:22px; }
-  .logo-kicker,.centerkicker { display:none; }
-  .sticky-call,.sticky-tg { display:none; }
-  .mobile-cta { display:grid; }
-  body { padding-bottom: 78px; }
-}</style>
-  <style>
-    .avito-meta {
-      margin: 12px auto 0;
-      width: min(1200px, 92%);
-      color: var(--muted);
-      font-size: 14px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .avito-meta span {
-      border: 1px solid color-mix(in oklab, var(--primary) 20%, transparent);
-      border-radius: 999px;
-      padding: 6px 11px;
-      background: color-mix(in oklab, var(--surface) 80%, var(--primary) 8%);
-      font-weight: 600;
-    }
-        
-        :root { --radius: 14px; }
-        .cards article,.service-list article,.rows article,.prices article,.timeline article { border-radius: 14px; }
-        .header { backdrop-filter: blur(6px); }
-        .btn { border-radius: 999px; }
-        
 
-        .prices article,.cards article { border: 1px solid color-mix(in oklab, var(--primary) 24%, transparent); }
-        .price { font-size: 38px; }
-        .btn { font-weight: 800; }
-        
-  </style>
+/* ===== MOBILE RESPONSIVE (injected by patcher) ===== */
+
+/* -- Общие мобильные фиксы -- */
+@media (max-width: 768px) {
+  html { font-size: 15px; }
+  .container { padding: 0 16px; }
+  section { padding: 50px 0 !important; }
+
+  /* -- HEADER -- */
+  .header__inner {
+    height: auto;
+    min-height: 56px;
+    padding: 8px 0;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .logo { gap: 8px; }
+  .logo__icon { width: 36px; height: 36px; font-size: 18px; }
+  .logo__text { font-size: 18px !important; letter-spacing: 1px; }
+  .header__phone {
+    font-size: 14px !important;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  .nav { display: none !important; }
+
+  /* -- BRAND STRIP -- */
+  .cargo-brand-strip__text {
+    font-size: clamp(28px, 8vw, 52px) !important;
+    letter-spacing: 0.02em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .cargo-brand-strip__inner { padding: 10px 0; }
+
+  /* -- HERO -- */
+  .hero {
+    padding: 0 !important;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .cargo-hero-truck-overlay {
+    filter: brightness(0.45) saturate(1.3) !important;
+  }
+  .hero__content { max-width: 100%; }
+  .hero__title {
+    font-size: clamp(32px, 9vw, 50px) !important;
+    letter-spacing: 1px;
+    line-height: 1.05 !important;
+    margin-bottom: 16px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .hero__subtitle {
+    font-size: 15px !important;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: rgba(255,255,255,0.92) !important;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+  .hero__features {
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin-bottom: 24px;
+  }
+  .hero__feature {
+    font-size: 12px !important;
+    padding: 10px 16px !important;
+    text-align: center;
+  }
+  .btn {
+    padding: 14px 28px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* -- HERO TEXT COLOR FIX (for dark overlay) -- */
+  .hero .hero__title,
+  .hero .hero__content h1 {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+
+  /* -- SECTIONS -- */
+  .s-title__heading,
+  .section-title,
+  .section__title {
+    font-size: clamp(26px, 7vw, 40px) !important;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    word-break: break-word;
+  }
+
+  /* -- GRIDS -- */
+  .services-grid,
+  .types-grid,
+  .advantages__content,
+  .footer__grid,
+  .benefits-grid,
+  .pricing-grid,
+  .features-grid,
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* -- SERVICE CARDS -- */
+  .service-card, .svc-card, .pricing-card, .benefit-card, .feature-card {
+    padding: 28px 20px !important;
+  }
+  .service-card__title, .svc-card__title, .pricing-card__title {
+    font-size: 22px !important;
+  }
+  .service-card__icon { font-size: 42px !important; }
+
+  /* -- ADVANTAGES -- */
+  .advantages__image { order: -1; }
+  .advantages__text h2 {
+    font-size: clamp(28px, 7vw, 42px) !important;
+    line-height: 1.1;
+  }
+  .advantages__list li {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  /* -- TYPE CARDS -- */
+  .type-card__image { height: 200px; }
+  .type-card__content { padding: 24px 16px; }
+  .type-card__title { font-size: 24px !important; }
+  .type-card__price { font-size: 22px; }
+
+  /* -- CTA -- */
+  .cta-section h2 {
+    font-size: clamp(28px, 7vw, 44px) !important;
+    line-height: 1.1;
+  }
+  .cta-section p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .cta-section__content { max-width: 100%; padding: 0 8px; }
+
+  /* -- FORM -- */
+  .form-wrapper {
+    padding: 24px 16px !important;
+    border-width: 3px;
+  }
+  .form-wrapper input,
+  .form-wrapper textarea {
+    padding: 14px 16px;
+    font-size: 16px;
+    border-width: 2px;
+  }
+  .cargo-tg-form {
+    padding: 24px 16px !important;
+    margin: 0 -8px;
+  }
+  .cargo-tg-form__title { font-size: 26px !important; }
+  .cargo-tg-form__sub { font-size: 13px; }
+  .cargo-tg-form input,
+  .cargo-tg-form textarea {
+    font-size: 16px;
+    padding: 14px 14px;
+  }
+  .cargo-tg-form__btn {
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  /* -- FOOTER -- */
+  .footer { padding: 40px 0 20px; }
+  .footer__logo { font-size: 24px !important; }
+  .footer__desc { font-size: 13px; }
+  .footer__grid { gap: 24px !important; }
+
+  /* -- FLOATING ELEMENTS -- */
+  .sticky-call, .sticky-tg { display: none !important; }
+  .mobile-cta {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mobile-cta a {
+    padding: 16px 8px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  body { padding-bottom: 60px !important; }
+
+  /* -- Stats -- */
+  .stat__num, .cargo-stat-num {
+    font-size: 32px !important;
+  }
+  .stat__label {
+    font-size: 12px !important;
+  }
+
+  /* -- MISC -- */
+  .truck-float-svg { display: none !important; }
+}
+
+/* -- Extra small screens (< 400px) -- */
+@media (max-width: 400px) {
+  .logo__text { font-size: 15px !important; }
+  .header__phone { font-size: 12px !important; }
+  .hero__title { font-size: 28px !important; }
+  .cargo-brand-strip__text { font-size: 24px !important; }
+  .s-title__heading { font-size: 24px !important; }
+  .service-card__title { font-size: 20px !important; }
+}
+
+/* -- Landscape phones -- */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero { min-height: 70vh; }
+}
+
+
+/* Hero gradient overlay for text readability */
+.cargo-hero-truck-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.1) 0%,
+    rgba(0,0,0,0.3) 40%,
+    rgba(0,0,0,0.5) 100%
+  );
+  pointer-events: none;
+}
+.hero .hero__title,
+.hero .hero__content h1 {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.3);
+}
+.hero .hero__subtitle {
+  color: rgba(255,255,255,0.92);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+.hero .hero__feature {
+  background: rgba(0,0,0,0.7);
+  color: #ffd000;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,208,0,0.3);
+}
+.hero .btn--yellow {
+  background: #ffd000;
+  color: #111;
+  border: none;
+}
+.hero .btn--yellow:hover {
+  background: #ffe040;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255,208,0,0.4);
+}
+
+
+/* Toast notification animation */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+  15% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  85% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+}
+</style>
 </head>
 <body>
-  
-<header class="header header--classic">
-  <div class="container navrow"><div class="logo">pereezd Kaliningrad</div><span class="logo-kicker">ГРУЗОПЕРЕВОЗКИ</span><nav><a href="#services">Услуги</a><a href="#works">Работы</a><a href="#reviews">Отзывы</a><a href="#contact">Контакты</a></nav><a class="btn btn--sm" href="tel:+7 (900) 000-00-00">+7 (900) 000-00-00</a></div>
+
+<!-- TOPNAV -->
+<header class="topnav">
+  <div class="container">
+    <div class="topnav__inner">
+      <div class="logo">
+        <div class="logo__icon">
+          <span></span><span></span><span></span>
+        </div>
+        <div>
+          <div class="logo__text">pereezd Kaliningrad</div>
+          <div class="logo__sub">грузоперевозки</div>
+        </div>
+      </div>
+      <nav class="topnav__links">
+        <a href="#services">Ремонт бытовой техники ▾</a>
+        <a href="#price">Оформление заявки</a>
+        <a href="#price">Гарантия</a>
+        <a href="#price">Цены</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <span class="topnav__phone">+7 (900) 000-00-00</span>
+        <button class="topnav__cta">Перейти в WhatsApp</button>
+      </div>
+    </div>
+  </div>
 </header>
 
-        <div class="avito-meta"><span>TF:listingpro-v2.0.14.4</span><span>Kaliningrad</span><span>+7 (900) 000-00-00</span></div>
-  
-<section class="hero hero--full" style="--hero:url('photo_1.jpg')">
-  <div class="container hero__content hero__content--center">
-    <p class="eyebrow">PREMIUM CARGO SERVICE</p>
-    <h1>pereezd Kaliningrad<br>Грузоперевозки без компромиссов</h1>
-    <p>⭐⭐⭐⭐⭐Читaйте oтзывы Грузoпepевозки, квартирныe пеpеезды,пoмoщь грузчикoв ,работaeм пo Kaлининграду и облaсти Гpузoвoе такси Звоните по любым вопроcoм c 8.30 дo 21.00 Пpокoнcультирую беcплaтнo ПEРEXОДИТЕ В ПPOФИЛЬ Hам мoжно дoвeрять 👍 Poхля,.</p>
-    <div class="hero__actions"><a class="btn" href="tel:+7 (900) 000-00-00">+7 (900) 000-00-00</a><a class="btn btn--ghost" href="#contact">Оставить заявку</a></div>
+<!-- HERO BAND -->
+<!-- CARGO BRAND STRIP -->
+<div class="cargo-brand-strip">
+  <div class="cargo-brand-strip__inner">
+    <span class="cargo-brand-strip__text">ГРУЗОПЕРЕВОЗКИ</span>
   </div>
-</section>
+</div>
+<div class="hero-band">
+<div class="cargo-hero-truck-overlay" style="background-image:url('photo_1.jpg')" aria-hidden="true"></div>
+<div class="cargo-particles"></div>
+<div class="cargo-road"></div>
 
-  
-<section id="services" class="section section--muted">
+
+
+  <h1>ГРУЗОПЕРЕВОЗКИ</h1>
+</div>
+
+<!-- HERO -->
+<section class="hero">
   <div class="container">
-    <h2>Ключевые услуги</h2>
-    <div class="cards cards--4">
-      <article><h3>Переезды квартир</h3><p>Аккуратная упаковка и перенос сложных предметов.</p></article>
-      <article><h3>Офисные переезды</h3><p>Работаем в ночные и выходные окна без простоев.</p></article>
-      <article><h3>Грузчики</h3><p>От одного специалиста до полной бригады.</p></article>
-      <article><h3>Междугород</h3><p>Надёжная перевозка по РФ с контролем этапов.</p></article>
+    <div class="hero__inner">
+      <div>
+        <h2 class="hero__title">Грузоперевозки<br>на дом и на объект<br><span style="color:var(--yellow);">в вашем городе</span></h2>
+        <div class="hero__checks">
+          <div class="hero__check">Выезд за 30–60 минут</div>
+          <div class="hero__check">Гарантия сохранности груза</div>
+          <div class="hero__check">Опыт с 2010 года</div>
+        </div>
+        <div class="hero__btns">
+          <button class="btn-yellow">Позвонить</button>
+          <button class="btn-green">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </button>
+        </div>
+      </div>
+      <div class="hero__person">
+        <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?w=400&q=80" alt="Водитель">
+      </div>
     </div>
   </div>
 </section>
 
-    
-<section id="services-prices" class="section section--muted">
+<!-- SERVICES -->
+<section class="section" id="services">
   <div class="container">
-    <h2>Услуги и цены</h2>
-    <div class="prices prices--six">
-      <article><h3>Газель 1.5т</h3><p class="price">от 2 000 ₽</p><ul><li>Подача от 30 мин</li><li>По городу и области</li></ul></article>
-      <article><h3>Переезд квартиры</h3><p class="price">от 5 000 ₽</p><ul><li>2 грузчика</li><li>Аккуратная упаковка</li></ul></article>
-      <article><h3>Офисный переезд</h3><p class="price">от 8 000 ₽</p><ul><li>Без простоя бизнеса</li><li>Работа по таймингу</li></ul></article>
-      <article><h3>Грузчики</h3><p class="price">от 700 ₽/ч</p><ul><li>Опытная бригада</li><li>Почасовая оплата</li></ul></article>
-      <article><h3>Межгород</h3><p class="price">от 12 000 ₽</p><ul><li>По РФ</li><li>Фиксированный маршрут</li></ul></article>
-      <article><h3>Срочная подача</h3><p class="price">от 2 500 ₽</p><ul><li>День-в-день</li><li>Приоритетный выезд</li></ul></article>
+    <div class="section__title">Мы перевозим</div>
+    <div class="services-grid">
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=500&q=70" alt="Мебель" class="svc-card__img">
+        <div class="svc-card__body">
+          <div class="svc-card__title">Грузоперевозки по городу</div>
+          <div class="svc-card__price">от 1500 тенге</div>
+          <a href="#form" class="svc-card__btn">Подробнее</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1586528116022-6e26b7c5fc41?w=500&q=70" alt="Стройматериалы" class="svc-card__img">
+        <div class="svc-card__body">
+          <div class="svc-card__title">Междугородние перевозки</div>
+          <div class="svc-card__price">от 2000 тенге</div>
+          <a href="#form" class="svc-card__btn">Подробнее</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=500&q=70" alt="Оборудование" class="svc-card__img">
+        <div class="svc-card__body">
+          <div class="svc-card__title">Квартирный переезд</div>
+          <div class="svc-card__price">от 5000 тенге</div>
+          <a href="#form" class="svc-card__btn">Подробнее</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=500&q=70" alt="Переезд" class="svc-card__img">
+        <div class="svc-card__body">
+          <div class="svc-card__title">Услуги грузчиков</div>
+          <div class="svc-card__price">от 8000 тенге</div>
+          <a href="#form" class="svc-card__btn">Подробнее</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=500&q=70" alt="Негабарит" class="svc-card__img">
+        <div class="svc-card__body">
+          <div class="svc-card__title">Перевозка спецтехники</div>
+          <div class="svc-card__price">от 9000 тенге</div>
+          <a href="#form" class="svc-card__btn">Подробнее</a>
+        </div>
+      </div>
+      <div class="svc-card svc-card--cta" id="form">
+        <p>Оставьте заявку — и мы рассчитаем стоимость за 5 минут. Бесплатный выезд оценщика в Калининград. Страховка, GPS, опытные грузчики — всё включено.</p>
+        <div class="phone">+7 (900) 000-00-00</div>
+        <a href="#" style="margin-top:12px;background:#25d366;color:#fff;padding:9px 22px;border-radius:20px;font-size:12px;font-weight:700;display:flex;align-items:center;gap:6px;justify-content:center;">
+          <svg width="14" height="14" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Написать в WhatsApp
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-  
-<section id="works" class="section works-story">
-  <div class="container grid2">
-    <div class="story"><h2>Портфолио реальных задач</h2><p>Сложные переезды, хрупкие грузы, срочные маршруты. Каждый кейс мы ведём по чек-листу.</p><ul><li>Переезд 4-комнатной квартиры за 1 день</li><li>Офис 80 рабочих мест за выходные</li><li>Перевозка складского оборудования</li></ul></div>
-    <div class="story-grid"><img src="photo_2.jpg" alt=""><img src="photo_3.jpg" alt=""><img src="photo_4.jpg" alt=""><img src="photo_5.jpg" alt=""></div>
-  </div>
-</section>
-
-  
-<section id="reviews" class="section section--muted">
+<!-- WHY US -->
+<section class="section section--gray">
   <div class="container">
-    <h2>Отзывы клиентов</h2>
-    <div class="cards cards--3">
-      <article><p>"Переехали аккуратно, без царапин и задержек. Цена совпала с расчётом."</p><h4>Анна, квартирный переезд</h4></article>
-      <article><p>"Офис перевезли за выходные, в понедельник команда вышла без простоя."</p><h4>Игорь, руководитель IT-компании</h4></article>
-      <article><p>"Очень чёткая коммуникация, всё по таймингу, рекомендую."</p><h4>Марина, доставка техники</h4></article>
+    <div class="why-grid">
+      <div class="why-banner">
+        <div class="why-banner__label">почему мы</div>
+        <div class="why-banner__logo">МАСТЕР<br>ТРАНС</div>
+        <img src="https://images.unsplash.com/photo-1473655657016-5ffc6afc1f25?w=280&q=80" alt="Команда">
+      </div>
+      <div class="why-features">
+        <div class="why-feat">
+          <div class="why-feat__icon">🏠</div>
+          <div>
+            <h4>Доставка на дом</h4>
+            <p>Выполняем перевозку прямо до квартиры или офиса, без лишних хлопот.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat__icon">⚡</div>
+          <div>
+            <h4>Срочный выезд</h4>
+            <p>Наш экипаж будет у вас через 30–60 минут после звонка.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat__icon">📦</div>
+          <div>
+            <h4>Оригинальная упаковка</h4>
+            <p>Используем только сертифицированные упаковочные материалы.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat__icon">🗺️</div>
+          <div>
+            <h4>Работаем по городу и области</h4>
+            <p>Охватываем все районы города и районы области.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat__icon">🛡️</div>
+          <div>
+            <h4>Гарантия</h4>
+            <p>Предоставляем гарантию на замену и работу на 12 месяцев.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat__icon">💳</div>
+          <div>
+            <h4>Доступные цены</h4>
+            <p>Мы предложим вам самое выгодное решение в вашем городе.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-  
-<section id="process" class="section">
+<!-- PRICE TABLE -->
+<section class="section" id="price">
   <div class="container">
-    <h2>Как проходит перевозка</h2>
-    <div class="timeline">
-      <article><span>01</span><h3>Заявка</h3><p>Быстрый расчёт стоимости и времени.</p></article>
-      <article><span>02</span><h3>Подготовка</h3><p>Упаковка, маркировка, чек-лист.</p></article>
-      <article><span>03</span><h3>Перевозка</h3><p>Бережная погрузка и доставка по маршруту.</p></article>
-      <article><span>04</span><h3>Сдача</h3><p>Разгрузка, расстановка, закрывающие документы.</p></article>
+    <div class="section__title">Цены на грузоперевозки</div>
+    <table class="price-table">
+      <thead>
+        <tr>
+          <th>Цена на выезд и погрузку</th>
+          <th>Цена</th>
+          <th>Заказать услугу</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Перевозка мебели (комната)</td>
+          <td class="price-val">от 3000 т</td>
+          <td><button class="price-table .btn-call">📞</button></td>
+        </tr>
+        <tr>
+          <td>Перевозка стиральных машин</td>
+          <td class="price-val">от 3000 т</td>
+          <td><button class="price-table .btn-call">📞</button></td>
+        </tr>
+        <tr>
+          <td>Перевозка холодильников</td>
+          <td class="price-val">от 5000 т</td>
+          <td><button class="price-table .btn-call">📞</button></td>
+        </tr>
+        <tr>
+          <td>Перевозка кондиционеров</td>
+          <td class="price-val">от 5000 т</td>
+          <td><button class="price-table .btn-call">📞</button></td>
+        </tr>
+        <tr>
+          <td>Офисный переезд</td>
+          <td class="price-val">от 4000 т</td>
+          <td><button class="price-table .btn-call">📞</button></td>
+        </tr>
+        <tr>
+          <td>Перевозка стройматериалов</td>
+          <td class="price-val">от 6000 т</td>
+          <td><button class="price-table .btn-call">📞</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?w=600&q=80" alt="Команда pereezd Kaliningrad">
+        <div style="background:var(--black);border-radius:8px;padding:16px 20px;margin-top:-1px;">
+          <div style="font-size:20px;font-weight:900;color:#fff;">МАСТЕР<span style="color:var(--yellow);">ТРАНС</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="about__badge">О компании</div>
+        <h3 class="about__title">pereezd Kaliningrad — это проверенное решение для грузоперевозок с гарантией качества в вашем городе</h3>
+        <p class="about__text">Профессиональная перевозка грузов любой сложности</p>
+        <p class="about__text">Бережная погрузка и доставка вашего имущества</p>
+        <a href="#form" class="about__btn">Подробнее о компании</a>
+      </div>
     </div>
   </div>
 </section>
 
-  
-<section id="contact" class="lead lead--split">
-  <div class="lead__info"><h2>pereezd Kaliningrad</h2><p>Оставьте заявку — перезвоним за 5 минут.</p><a href="tel:+7 (900) 000-00-00">+7 (900) 000-00-00</a></div>
-  <div class="lead__form">
-    <form class="js-form" data-bot-token="8434584674:AAGvxeQulQDyaESBQeu7rF5siC6HHs2McrE" data-chat-id="549333404">
-      <input name="name" placeholder="Ваше имя" required>
-      <input name="phone" placeholder="Телефон" required>
-      <textarea name="message" rows="4" placeholder="Что перевозим и куда?"></textarea>
-      <button type="submit" class="btn">Отправить заявку</button>
+<!-- PARTNERS -->
+<section class="section">
+  <div class="container">
+    <div class="section__title">Работаем с ведущими партнёрами</div>
+    <div class="partners-grid">
+      <div class="partner-chip">ИКЕА</div>
+      <div class="partner-chip">Leroy MerLin</div>
+      <div class="partner-chip">ДНС</div>
+      <div class="partner-chip">М.Видео</div>
+      <div class="partner-chip">Wildberries</div>
+      <div class="partner-chip">Ozon</div>
+      <div class="partner-chip">Lamoda</div>
+      <div class="partner-chip">Castorama</div>
+      <div class="partner-chip">Hoff</div>
+      <div class="partner-chip">Сбермаркет</div>
+    </div>
+    <div class="partner-note">
+      <span>Если нужного партнёра нет в списке, это не значит что мы с ними не работаем — просто позвоните нам:</span>
+      <span style="font-weight:700;color:var(--black);">+7 (900) 000-00-00</span>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section__title">Мы в соцсетях</div>
+    <div class="social-grid">
+      <div class="soc-card soc-card--yt">
+        <div class="soc-card__icon">▶️</div>
+        <div class="soc-card__name">YouTube</div>
+        <div class="soc-card__desc">Видео каждую неделю</div>
+        <div class="soc-card__btn">Перейти →</div>
+      </div>
+      <div class="soc-card soc-card--ig">
+        <div class="soc-card__icon">📸</div>
+        <div class="soc-card__name">Instagram</div>
+        <div class="soc-card__desc">Загружаем в сторис</div>
+        <div class="soc-card__btn">Перейти →</div>
+      </div>
+      <div class="soc-card soc-card--tk">
+        <div class="soc-card__icon">🎵</div>
+        <div class="soc-card__name">TikTok</div>
+        <div class="soc-card__desc">Короткие советы</div>
+        <div class="soc-card__btn">Перейти →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BOTTOM -->
+<section class="cta-bottom" id="contacts">
+  <div class="container">
+    <div class="cta-bottom__inner">
+      <div>
+        <h2>ЗАКАЖИТЕ ПЕРЕВОЗКУ<br>ПРЯМО СЕЙЧАС</h2>
+        <h2>Компания pereezd Kaliningrad — это проверенное решение по грузоперевозкам с гарантией качества в вашем городе</h2>
+      </div>
+      <div class="cta-bottom__contacts">
+        <div class="cta-bottom__phone">+7 (900) 000-00-00</div>
+        <button class="cta-bottom__btn">Позвонить</button>
+        <button class="cta-bottom__green">
+          <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Написать в WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<!-- ===== TELEGRAM FORM (без PHP, для GitHub Pages) ===== -->
+<section class="cargo-tg-form-section" id="cargo-zayavka">
+  <div class="container" style="max-width:1200px;margin:0 auto;padding:0 24px;">
+    <form class="cargo-tg-form" data-bot-token="8434584674:AAGvxeQulQDyaESBQeu7rF5siC6HHs2McrE" data-chat-id="549333404" autocomplete="off">
+      <div class="cargo-tg-form__title">ОСТАВИТЬ ЗАЯВКУ</div>
+      <div class="cargo-tg-form__sub">Ответим в течение 15 минут · Бесплатный выезд на замер</div>
+      <input name="name" type="text" placeholder="Ваше имя" required>
+      <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+      <input name="cargo" type="text" placeholder="Что перевозите? (груз, объём)">
+      <input name="route" type="text" placeholder="Маршрут (откуда — куда)">
+      <textarea name="message" placeholder="Дополнительные пожелания..."></textarea>
+      <button type="submit" class="cargo-tg-form__btn">📲 ОТПРАВИТЬ В TELEGRAM</button>
+      <div class="cargo-tg-form__success">✅ Заявка отправлена! Ожидайте звонка.</div>
     </form>
   </div>
 </section>
 
-  
 <footer class="footer">
-  <div class="container footer__row"><strong>pereezd Kaliningrad</strong><span>© 2026. Все права защищены.</span></div>
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">Мастер<span>Транс</span></div>
+        <p class="footer__desc">Профессиональный сервис по перевозке грузов с гарантией качества в вашем городе.</p>
+        <div class="footer__soc">
+          <a href="#">▶</a>
+          <a href="#">📸</a>
+          <a href="#">🎵</a>
+        </div>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="#">Перевозка мебели</a></li>
+          <li><a href="#">Стиральные машины</a></li>
+          <li><a href="#">Бренды</a></li>
+          <li><a href="#">Офисный переезд</a></li>
+          <li><a href="#">Грузоперевозки</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Информация</h4>
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Наши мастера</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Партнёры</a></li>
+          <li><a href="#">Статьи</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li>+7 (900) 000-00-00</li>
+          <li>mastertrans@gmail.com</li>
+          <li>Работаем 7:00–22:00</li>
+          <li>г. Актобе, ул. Самойлов, д. 1</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2010–2026 pereezd Kaliningrad — Профессиональный сервис по грузоперевозкам. Все права защищены.</div>
+  </div>
 </footer>
-<a class="sticky-call" href="tel:+79000000000">📞</a>
-<a class="sticky-tg" href="https://t.me/+79000000000">✈️</a>
-<div class="mobile-cta">
-  <a class="mobile-cta__call" href="tel:+79000000000">Позвонить</a>
-  <a class="mobile-cta__lead" href="#contact">Заявка</a>
-</div>
 
-  <script>
-for (const form of document.querySelectorAll('.js-form')) {
-  form.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const payload = new FormData(form);
-    const msg = [
-      '🚚 Новая заявка с сайта',
-      '',
-      'Имя: ' + (payload.get('name') || ''),
-      'Телефон: ' + (payload.get('phone') || ''),
-      'Сообщение: ' + (payload.get('message') || '')
-    ].join('\n');
 
-    try {
-      const res = await fetch('https://api.telegram.org/bot' + form.dataset.botToken + '/sendMessage', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({ chat_id: form.dataset.chatId, text: msg })
-      });
-      if (!res.ok) throw new Error('telegram_error');
-      alert('Заявка отправлена. Свяжемся с вами в ближайшее время.');
-      form.reset();
-    } catch (e) {
-      alert('Не удалось отправить заявку. Позвоните нам напрямую.');
+<script>
+(function(){
+  // ===== SCROLL REVEAL =====
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('[data-animate],[data-reveal],[data-animate-left],[data-animate-right],[data-animate-scale]')
+    .forEach(el => revealObs.observe(el));
+
+  // ===== PARALLAX TRUCK =====
+  const truckOverlay = document.querySelector('.cargo-hero-truck-overlay');
+  if (truckOverlay) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      truckOverlay.style.transform = 'scale(1.06) translateY(' + (scrolled * 0.15) + 'px)';
+    }, {passive: true});
+    setTimeout(() => truckOverlay.classList.add('parallax-active'), 300);
+  }
+
+  // ===== ANIMATED COUNTERS =====
+  function animCounter(el, target, duration) {
+    let start = 0;
+    const step = target / (duration / 16);
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= target) { start = target; clearInterval(timer); }
+      el.textContent = Math.round(start).toLocaleString('ru') + (el.dataset.suffix || '');
+    }, 16);
+  }
+  const cntObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        if (!el.dataset.counted) {
+          el.dataset.counted = '1';
+          animCounter(el, parseInt(el.dataset.target, 10), 1400);
+        }
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-target]').forEach(el => cntObs.observe(el));
+
+  // ===== PARTICLES =====
+  const particleContainers = document.querySelectorAll('.cargo-particles');
+  particleContainers.forEach(container => {
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('span');
+      p.className = 'cargo-particle';
+      p.style.cssText = [
+        'left:' + (Math.random()*100) + '%',
+        'bottom:' + (Math.random()*30) + 'px',
+        'width:' + (2 + Math.random()*4) + 'px',
+        'height:' + (2 + Math.random()*4) + 'px',
+        'animation-duration:' + (4 + Math.random()*8) + 's',
+        'animation-delay:' + (Math.random()*6) + 's',
+        'opacity:' + (0.3 + Math.random()*0.5)
+      ].join(';');
+      container.appendChild(p);
     }
   });
-}
+
+  // ===== TELEGRAM FORM =====
+  document.querySelectorAll('.cargo-tg-form[data-bot-token]').forEach(form => {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = form.querySelector('.cargo-tg-form__btn');
+      const success = form.querySelector('.cargo-tg-form__success');
+      const fields = form.querySelectorAll('input,textarea,select');
+      btn.disabled = true;
+      btn.textContent = 'ОТПРАВЛЯЕМ...';
+      const lines = ['\uD83D\uDE9A Новая заявка с сайта ГРУЗОПЕРЕВОЗКИ', ''];
+      fields.forEach(f => {
+        if (f.name && f.value) {
+          const labels = {name:'Имя',phone:'Телефон',cargo:'Груз',route:'Маршрут',date:'Дата',message:'Сообщение',weight:'Вес'};
+          lines.push((labels[f.name] || f.name) + ': ' + f.value);
+        }
+      });
+      lines.push('', '\uD83D\uDCCD Сайт: ' + window.location.hostname);
+      try {
+        const res = await fetch('https://api.telegram.org/bot' + form.dataset.botToken + '/sendMessage', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({chat_id: 549333404, text: lines.join('\n'), parse_mode: 'HTML'})
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        if (success) { success.style.display = 'block'; }
+        fields.forEach(f => { if (f.tagName !== 'SELECT') f.value = ''; });
+        btn.textContent = '✅ ОТПРАВЛЕНО!';
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.textContent = 'ОТПРАВИТЬ ЗАЯВКУ';
+          if (success) success.style.display = 'none';
+        }, 4000);
+      } catch(err) {
+        btn.disabled = false;
+        btn.textContent = 'ОТПРАВИТЬ ЗАЯВКУ';
+        (function(){var _n=document.createElement('div');_n.textContent='Ошибка отправки. Позвоните нам напрямую.';_n.style.cssText='position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#f44336;color:#fff;padding:16px 32px;border-radius:8px;z-index:9999;font-size:16px;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.3);animation:fadeInOut 3s forwards';document.body.appendChild(_n);setTimeout(function(){_n.remove()},4000)})();
+      }
+    });
+  });
+
+  // ===== OLD FORM SUPPORT (если есть .js-form) =====
+  document.querySelectorAll('.js-form').forEach(form => {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const fd = new FormData(form);
+      const token = form.dataset.botToken || '8434584674:AAGvxeQulQDyaESBQeu7rF5siC6HHs2McrE';
+      const chatId = form.dataset.chatId || '549333404';
+      const msg = ['\uD83D\uDE9A Заявка с сайта ГРУЗОПЕРЕВОЗКИ','',
+        '\uD83D\uDC64 Имя: ' + (fd.get('name')||''),
+        '\uD83D\uDCF1 Телефон: ' + (fd.get('phone')||''),
+        '\uD83D\uDCE6 Груз: ' + (fd.get('cargo')||''),
+        '\uD83D\uDCDD Сообщение: ' + (fd.get('message')||''),
+        '\uD83C\uDF10 Сайт: ' + window.location.hostname
+      ].join('\n');
+      try {
+        const res = await fetch('https://api.telegram.org/bot' + token + '/sendMessage', {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({chat_id: 549333404, text: msg})
+        });
+        if (!res.ok) throw new Error();
+        (function(){var _n=document.createElement('div');_n.textContent='\u2705 Заявка отправлена! Перезвоним в течение 15 минут.';_n.style.cssText='position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#4caf50;color:#fff;padding:16px 32px;border-radius:8px;z-index:9999;font-size:16px;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.3);animation:fadeInOut 3s forwards';document.body.appendChild(_n);setTimeout(function(){_n.remove()},3500)})();
+        form.reset();
+      } catch {
+        (function(){var _n=document.createElement('div');_n.textContent='Ошибка отправки. Позвоните нам напрямую.';_n.style.cssText='position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#f44336;color:#fff;padding:16px 32px;border-radius:8px;z-index:9999;font-size:16px;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.3);animation:fadeInOut 3s forwards';document.body.appendChild(_n);setTimeout(function(){_n.remove()},4000)})();
+      }
+    });
+  });
+})();
 </script>
+
 </body>
 </html>
